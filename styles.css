@@ -1,0 +1,77 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 20px;
+  color: #333;
+  text-shadow: 2px 2px #ffd700;
+}
+
+.start-button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+
+.instruction-text {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 20px;
+  visibility: hidden;
+}
+
+.color-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px;
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.color-box:hover {
+  transform: scale(1.15);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.result-text {
+  font-size: 2rem;
+  color: #333;
+  margin: 20px;
+  visibility: hidden;
+}
+
+.color-image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  position: absolute;
+  z-index: 1; /* Para asegurarse de que la imagen esté sobre el color de fondo */
+}
